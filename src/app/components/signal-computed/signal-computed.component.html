@@ -1,0 +1,50 @@
+<h1>Effect exercises</h1>
+
+<div class="card">
+    <div class="card-body">
+        <h3>Num1: {{num1()}}</h3>
+        <h3>Comupterd (100 - num1): {{num2()}}  </h3>
+    </div>
+
+    <div class="card-footer">
+        <button class="btn btn-info" (click)="modifyNum()">Modify (Num + 10)</button>
+    </div>
+</div>
+
+<div class="card mt-3">
+    <div class="card-body">
+        List values to sum
+        <ul>
+            @for (item of arr(); track item) {
+                <li>{{item}}</li>
+            }
+        </ul>
+        <h3>Sum: {{sumArr()}}</h3>
+
+        <div class="card-footer">
+            <button class="btn btn-info" (click)="modifyArr()" [disabled]="disabedButton">Modify (sum + 10)</button>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="card mt-3">
+    <div class="card-body">
+
+        <h1>Untracked signlas - console output</h1>
+
+        <div>
+            <h3>Counter 1</h3>
+            <h4>{{counter1()}}</h4>
+            <button class="btn btn-info" (click)="updateCounter1()" >updateCounter1</button>
+        </div>
+
+        <div>
+            <h3>Counter 2 - untracked in console</h3>
+            <h4>{{counter2()}}</h4>
+            <button class="btn btn-info" (click)="updateCounter2()" >updateCounter2</button>
+        </div>
+
+    </div>
+</div>

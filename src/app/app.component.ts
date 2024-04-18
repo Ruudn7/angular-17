@@ -13,13 +13,13 @@ import { NavbarComponent } from './ui/navbar/navbar.component';
 export class AppComponent implements OnInit {
 
   ngOnInit(): void {
-    const obs = of({name: 'qwe'}, [1,2,3,4,5], function qwe(){ console.log('123')})
-    const obs1 = of([{name: 'qwe'}, [1,2,3,4,5], function qwe(){ console.log('123')}])
-    const obs2 = from([{name: 'qwe'}, [1,2,3,4,5], function qwe(){ console.log('123')}])
+    // const obs = of({name: 'qwe'}, [1,2,3,4,5], function qwe(){ console.log('123')})
+    // const obs1 = of([{name: 'qwe'}, [1,2,3,4,5], function qwe(){ console.log('123')}])
+    // const obs2 = from([{name: 'qwe'}, [1,2,3,4,5], function qwe(){ console.log('123')}])
 
-    obs.subscribe(val => console.log(val));
-    obs1.subscribe(val => console.log(val));
-    obs2.subscribe(val => console.log(val));
+    // obs.subscribe(val => console.log(val));
+    // obs1.subscribe(val => console.log(val));
+    // obs2.subscribe(val => console.log(val));
   }
 
 

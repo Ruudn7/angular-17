@@ -1,1 +1,36 @@
-<p>signals works!</p>
+<div>
+    <button
+        (click)="incrCounterSet()"
+        class="btn btn-info"
+    >Incremetn signal by set</button>
+
+    <div class="card p-4 mt-4 w-50">
+        <div class="card-body">
+            <h5 class="card-title text-center">Incremented card</h5>
+
+            <h3 class="text-center">{{countSet()}}</h3>
+        </div>
+    </div>
+</div>
+
+<div class="mt-3">
+    <button
+        (click)="incrCounterUpdate()"
+        class="btn btn-info"
+    >Incremetn signal by update</button>
+
+    <div class="card p-4 mt-4 w-50">
+        <div class="card-body">
+            <h5 class="card-title text-center">Incremented card</h5>
+
+            <h3 class="text-center">{{countUpdate()}}</h3>
+        </div>
+    </div>
+</div>
+
+<h2 class="mt-3">Cart Example</h2>
+
+<div class="card mt-3">
+    <h5 class="card-title text-center">Cart value</h5>
+    <div class="card-body text-center">{{cart() | json}}</div>
+</div>

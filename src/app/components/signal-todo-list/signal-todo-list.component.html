@@ -1,0 +1,14 @@
+<ul class="list-group">
+    @for (item of todos(); track item; let i = $index) {
+        <li class="list-group-item">
+            item {{i+1}}: {{item}}
+            <button class="btn btn-danger ms-5"(click)="remove(item)">Delete item</button>
+        </li>
+    } 
+</ul>
+
+<div class="mt-3">
+    <label class="form-label">Todo List</label>
+    <input type="text" class="form-control" #addItemInput (keyup.enter)="addTodo(addItemInput)">
+    <button class="btn btn-info mt-3" (click)="addTodo(addItemInput)">Add Item</button>
+</div>
